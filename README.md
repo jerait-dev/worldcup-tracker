@@ -9,7 +9,8 @@ built in plain English, with no code.
 ## What it does
 - Group standings, with a chosen team's headline stats and gap to the leader
 - Points-by-matchday trend vs the group leader
-- Countdown to the next fixture and a last-results view
+- Countdown to the next fixture and a last-results view, each with a short
+  data-generated commentary line (build-up and reaction)
 - **Scenarios** — a what-if on your team's next game: pick Win/Draw/Loss and see
   the provisional group table update
 - **All fixtures** — every group's six games, scores or kickoff times
