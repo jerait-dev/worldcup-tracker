@@ -148,41 +148,43 @@ td.pts{font-family:'Saira Condensed';font-weight:800;font-size:17px}
 }
 @media (prefers-reduced-motion:reduce){.btn .spin{animation:none}}
 
-/* World press */
-.press{margin-top:18px}
-.press .phead{display:flex;align-items:center;gap:12px;padding:13px 18px;border-bottom:1px solid var(--line);flex-wrap:wrap}
-.press .ptitle{font-family:Saira,sans-serif;font-size:15px;font-weight:700}
-.press .pctx{font-size:12.5px;color:var(--muted)}
-.press .pbtn{margin-left:auto;background:var(--accent);color:#fff;border:none;border-radius:9px;
-  padding:8px 13px;font:600 13px Inter;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
-.press .pbtn:hover{background:var(--accent-d)}
-.press .pbtn:disabled{opacity:.6;cursor:default}
-.pbody{padding:14px 18px 16px}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
-.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 12px;
-  font:600 12.5px Inter;color:var(--text);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
-.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
-.chip .ct{color:var(--muted)}
-.chip[aria-pressed="true"] .ct{color:#9DB0DA}
-.chip .star{color:var(--amber)}
-.hl{display:flex;flex-direction:column;gap:3px;padding:11px 0;border-bottom:1px solid #F1F2F6;
-  text-decoration:none;color:inherit}
-.hl:last-child{border-bottom:none}
-.hl:hover .hl-title{color:var(--accent-d)}
-.hl-title{font-size:15px;font-weight:600;line-height:1.35;color:var(--text)}
-.hl-meta{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:7px;flex-wrap:wrap}
-.hl-meta .src{font-weight:600;color:#4A5163}
-.pstate{font-size:13.5px;color:var(--muted);padding:20px 2px;text-align:center;line-height:1.55}
-.pstate b{color:var(--text)}
-.pstate .spin{display:inline-block;width:15px;height:15px;border:2px solid #D8DDE8;
-  border-top-color:var(--accent);border-radius:50%;animation:sp .7s linear infinite;
-  vertical-align:middle;margin-right:8px}
-.pview{display:inline-flex;background:#EDF0F7;border-radius:999px;padding:3px;margin-bottom:12px;gap:2px}
-.pview button{border:none;background:none;border-radius:999px;padding:6px 14px;
-  font:600 12.5px Inter;color:var(--muted);cursor:pointer}
-.pview button[aria-pressed="true"]{background:#fff;color:var(--text);box-shadow:0 1px 2px rgba(16,24,40,.14)}
-.pnote{font-size:12.5px;color:var(--muted);margin:-2px 0 12px;line-height:1.45}
-.chiprow{display:flex;gap:8px;flex-wrap:wrap}
+/* More panel: scenarios / fixtures / scorers */
+.more{margin-top:18px}
+.seg{display:inline-flex;background:#EDF0F7;border-radius:999px;padding:3px;gap:2px;margin-bottom:14px}
+.seg button{border:none;background:none;border-radius:999px;padding:6px 13px;font:600 12.5px Inter;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:#fff;color:var(--text);box-shadow:0 1px 2px rgba(16,24,40,.14)}
+.lsel{appearance:none;border:1px solid var(--line);background:#fff;border-radius:9px;padding:7px 30px 7px 12px;
+  font:600 13px Inter;color:var(--text);cursor:pointer;margin-bottom:12px}
+.needs{font-size:15px;color:var(--text);margin:2px 0 14px;line-height:1.5}
+.needs b{color:var(--accent-d)}
+.outcome{margin:6px 0 4px;font-size:13.5px;color:var(--muted)}
+.miniwrap{margin-top:12px}
+.minirow{display:flex;align-items:center;gap:8px;padding:7px 8px;border-bottom:1px solid #F1F2F6;font-size:13.5px}
+.minirow:last-child{border-bottom:none}
+.minirow.me{background:#F2F6FF;border-radius:7px}
+.minirow .rk{color:var(--muted);font-family:'Saira Condensed';font-weight:700;width:18px}
+.minirow .nm{flex:1;font-weight:600}
+.minirow .pt{font-family:'Saira Condensed';font-weight:800;font-size:15px}
+.fxrow{display:flex;align-items:center;gap:10px;padding:9px 2px;border-bottom:1px solid #F1F2F6;font-size:14px}
+.fxrow:last-child{border-bottom:none}
+.fxrow .d{width:64px;color:var(--muted);font-size:12px;flex:none}
+.fxrow .tA{flex:1;text-align:right;font-weight:600}
+.fxrow .tB{flex:1;font-weight:600}
+.fxrow .sc{font-family:'Saira Condensed';font-weight:800;font-size:15px;background:#F2F4F8;border-radius:7px;padding:2px 9px;min-width:48px;text-align:center}
+.fxrow .vs{color:var(--muted);font-size:12px;min-width:48px;text-align:center}
+.fxrow.me{background:#F2F6FF;border-radius:8px;padding-left:8px;padding-right:8px}
+.sco{width:100%;border-collapse:collapse;font-size:14px}
+.sco td{padding:9px 8px;border-bottom:1px solid #F1F2F6}
+.sco tr:last-child td{border-bottom:none}
+.sco tr.me td{background:#F2F6FF}
+.sco .rk{color:var(--muted);font-family:'Saira Condensed';font-weight:700;width:26px}
+.sco .nm{font-weight:600}
+.sco .tm{color:var(--muted);font-size:12.5px}
+.sco .g{text-align:right;font-family:'Saira Condensed';font-weight:800;font-size:16px;width:40px}
+.note2{font-size:12.5px;color:var(--muted);margin-top:12px;line-height:1.45}
+.commentary{font-size:14.5px;line-height:1.5;color:var(--text);background:#F7F9FC;
+  border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:11px 14px;margin-bottom:16px}
+.commentary b{color:var(--accent-d)}
 </style>
 </head>
 <body>
@@ -229,16 +231,13 @@ td.pts{font-family:'Saira Condensed';font-weight:800;font-size:17px}
     <div class="fxbody" id="fxbody"></div>
   </section>
 
-  <section class="panel press">
-    <div class="phead">
-      <span class="ptitle">World press</span>
-      <span class="pctx" id="pctx"></span>
-      <button class="pbtn" id="pbtn" type="button"><span id="plabel">Load headlines</span></button>
+  <section class="panel more">
+    <div class="tabs" role="tablist">
+      <button class="tab" id="mtab-sc"  role="tab" aria-selected="true"  type="button">Scenarios</button>
+      <button class="tab" id="mtab-fx"  role="tab" aria-selected="false" type="button">All fixtures</button>
+      <button class="tab" id="mtab-sco" role="tab" aria-selected="false" type="button">Top scorers</button>
     </div>
-    <div class="pbody">
-      <div class="chips" id="pchips" style="display:none"></div>
-      <div id="plist"></div>
-    </div>
+    <div class="fxbody" id="morebody"></div>
   </section>
 
   <footer class="foot">
@@ -247,7 +246,6 @@ td.pts{font-family:'Saira Condensed';font-weight:800;font-size:17px}
     is hand-updated roughly once a day, so the quiet risk to watch isn't wrong data, it's
     <b>out-of-date-but-true</b> data. When something looks off, the fix is to say so in plain words and have it re-check against the source.
     <div class="src">Data: openfootball/worldcup.json (public domain). Unofficial fan tracker — no affiliation with, or endorsement by, FIFA or any official body.</div>
-    <div class="src">World press: headlines via GDELT, a free, open index of global news. Titles link to the original outlet; no article text is reproduced here.</div>
   </footer>
 </main>
 
@@ -352,8 +350,8 @@ function render(){
   // fixtures
   renderFixtures();
 
-  // world press (follows the selected team)
-  renderPress();
+  // scenarios / fixtures / scorers (follows the selected team)
+  renderMore();
 
   // picker
   if(picker.value!==team) picker.value=team;
@@ -382,6 +380,29 @@ function renderChart(grp, a, b){
   legend.innerHTML=`<span><i style="background:#1E5BFF"></i>${a}</span><span><i style="background:#9AA8C0"></i>${b} (leader)</span>`;
 }
 
+function commentaryLast(m){
+  const home=m.team1===team, tg=home?m.ft[0]:m.ft[1], og=home?m.ft[1]:m.ft[0];
+  const opp=home?m.team2:m.team1, sc=home?(m.goals1||[]):(m.goals2||[]);
+  let s = tg>og? `${team} beat ${opp} ${tg}\u2013${og}` : tg<og? `${team} lost ${tg}\u2013${og} to ${opp}` : `${team} drew ${tg}\u2013${og} with ${opp}`;
+  s += sc.length? ` \u2014 ${sc.join(' & ')} on the scoresheet.` : `.`;
+  if(m.group){ const tbl=tableWith(m.group,null); const r=tbl.findIndex(x=>x.team===team)+1; const me=tbl.find(x=>x.team===team);
+    if(r&&me) s += ` That leaves them <b>${r===1?'top of':ordTxt(r)+' in'} ${m.group}</b> on ${me.Pts} point${me.Pts===1?'':'s'}.`; }
+  return s;
+}
+function commentaryNext(m){
+  const home=m.team1===team, opp=home?m.team2:m.team1, grp=m.group;
+  let s = m.ground? `${team} face ${opp} in ${m.ground}.` : `${team} face ${opp} next.`;
+  if(grp){ const tbl=tableWith(grp,null); const r=tbl.findIndex(x=>x.team===team)+1; const me=tbl.find(x=>x.team===team);
+    if(r&&me){ const left=3-me.P;
+      s += ` They're <b>${r===1?'top of':ordTxt(r)+' in'} ${grp}</b> on ${me.Pts} point${me.Pts===1?'':'s'}${left>0?`, ${left} game${left>1?'s':''} to play`:''}.`;
+      const hypo=home?{team1:team,team2:opp,ft:[2,0]}:{team1:opp,team2:team,ft:[0,2]};
+      const prov=tableWith(grp,hypo); const pr=prov.findIndex(x=>x.team===team)+1; const pm=prov.find(x=>x.team===team);
+      if(pm) s += ` A win would take them to <b>${pm.Pts}</b> and provisional ${ordTxt(pr)}.`;
+    }
+  }
+  return s;
+}
+
 function renderFixtures(){
   document.getElementById('tab-next').setAttribute('aria-selected', fxTab==='next');
   document.getElementById('tab-last').setAttribute('aria-selected', fxTab==='last');
@@ -391,7 +412,8 @@ function renderFixtures(){
     if(!next){ fxbody.innerHTML=`<div class="cnote">No upcoming fixture in the data — group stage may be complete.</div>`; return; }
     const opp = next.m.team1===team? next.m.team2 : next.m.team1;
     const home = next.m.team1===team;
-    fxbody.innerHTML=`<div class="countdown">
+    fxbody.innerHTML=`<div class="commentary">${commentaryNext(next.m)}</div>
+      <div class="countdown">
       <div class="cd-when">
         <div class="opp">${home?"vs":"@"} ${fl(opp)} ${opp}</div>
         <div class="meta">${fmtDate(next.d)} · ${next.d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})} (your time) · ${next.m.group} · ${next.m.ground||""}</div>
@@ -401,7 +423,8 @@ function renderFixtures(){
   } else {
     const past=mine.filter(m=>m.ft).map(m=>({m,d:parseUTC(m.date,m.time)})).sort((a,b)=>b.d-a.d);
     if(!past.length){ fxbody.innerHTML=`<div class="cnote">No results played yet.</div>`; return; }
-    fxbody.innerHTML=past.map(({m,d})=>{
+    const lead=`<div class="commentary">${commentaryLast(past[0].m)}</div>`;
+    fxbody.innerHTML=lead+past.map(({m,d})=>{
       const sc=m.ft[0]+"–"+m.ft[1];
       const sg=[...(m.goals1||[]).map(n=>n+" ("+m.team1.slice(0,3).toUpperCase()+")"), ...(m.goals2||[]).map(n=>n+" ("+m.team2.slice(0,3).toUpperCase()+")")].join(" · ");
       return `<div class="result"><span class="rdate">${fmtDate(d)}</span>
@@ -444,252 +467,119 @@ function setStatus(live, msg){
   else { dot.className='dot snap'; t.textContent=msg||'Showing saved snapshot'; }
 }
 
-/* ---------- world press (live news via GDELT — free, no key) ---------- */
-const VENUE_CC={'Atlanta':'US','Boston (Foxborough)':'US','Dallas (Arlington)':'US',
-  'Guadalajara (Zapopan)':'MX','Houston':'US','Kansas City':'US','Los Angeles (Inglewood)':'US',
-  'Mexico City':'MX','Miami (Miami Gardens)':'US','Monterrey (Guadalupe)':'MX',
-  'New York/New Jersey (East Rutherford)':'US','Philadelphia':'US',
-  'San Francisco Bay Area (Santa Clara)':'US','Seattle':'US','Toronto':'CA','Vancouver':'CA'};
-const CC_NAME={US:'United States',CA:'Canada',MX:'Mexico'};
-const COUNTRY2CC={'United States':'US','United Kingdom':'GB','Canada':'CA','Mexico':'MX','Brazil':'BR',
-  'Morocco':'MA','France':'FR','Spain':'ES','Germany':'DE','Argentina':'AR','Portugal':'PT',
-  'Netherlands':'NL','Italy':'IT','Belgium':'BE','Australia':'AU','Japan':'JP','South Korea':'KR',
-  'Saudi Arabia':'SA','Norway':'NO','Sweden':'SE','Switzerland':'CH','Croatia':'HR','Senegal':'SN',
-  'Egypt':'EG','Iran':'IR','Nigeria':'NG','Ghana':'GH','Colombia':'CO','Ecuador':'EC','Uruguay':'UY',
-  'Paraguay':'PY','Austria':'AT','Turkey':'TR','Qatar':'QA','Tunisia':'TN','Algeria':'DZ',
-  'New Zealand':'NZ','Ireland':'IE','India':'IN','China':'CN','South Africa':'ZA'};
-function ccFlag(cc){ if(!cc||cc.length!==2) return '\uD83C\uDF10';
-  return String.fromCodePoint(...[...cc.toUpperCase()].map(c=>0x1F1E6+c.charCodeAt(0)-65)); }
-function pcountryFlag(name){ return COUNTRY2CC[name]? ccFlag(COUNTRY2CC[name]) : '\uD83C\uDF10'; }
+/* ---------- escape util ---------- */
 function escapeHtml(s){ return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
-let pressTeam=null, pressArticles=[], pressFilter='All', pressBusy=false;
+/* ---------- more panel: scenarios / fixtures / scorers ---------- */
+let moreTab='sc', scOutcome=null, fxGroup=null;
 
-function relevantFixture(){
-  const mine=MATCHES.filter(m=>m.team1===team||m.team2===team).map(m=>({m,d:parseUTC(m.date,m.time)}));
-  const next=mine.filter(o=>!o.m.ft&&o.d).sort((a,b)=>a.d-b.d)[0];
-  if(next) return {fx:next.m, when:'next'};
-  const last=mine.filter(o=>o.m.ft).sort((a,b)=>b.d-a.d)[0];
-  return last? {fx:last.m, when:'last'} : null;
+function renderMore(){
+  const set=(id,on)=>{ const e=document.getElementById(id); if(e) e.setAttribute('aria-selected', on); };
+  set('mtab-sc', moreTab==='sc'); set('mtab-fx', moreTab==='fx'); set('mtab-sco', moreTab==='sco');
+  if(moreTab==='sc') renderScenarios();
+  else if(moreTab==='fx') renderFixturesAll();
+  else renderScorers();
 }
-function hostCountryName(){ const rf=relevantFixture(); if(!rf||!rf.fx.ground) return null;
-  const cc=VENUE_CC[rf.fx.ground]; return cc? CC_NAME[cc] : null; }
-function pctxText(){ const rf=relevantFixture(); if(!rf) return '';
-  const opp=rf.fx.team1===team? rf.fx.team2 : rf.fx.team1; const host=hostCountryName();
-  return (rf.when==='next'?'Next: ':'Last: ')+team+' v '+opp+(rf.fx.ground?' · '+rf.fx.ground+(host?', '+host:''):''); }
-function parseGdeltDate(s){ if(!s) return null;
-  const m=String(s).match(/(\d{4})(\d{2})(\d{2})T?(\d{2})(\d{2})(\d{2})/); if(!m) return null;
-  return new Date(Date.UTC(+m[1],+m[2]-1,+m[3],+m[4],+m[5],+m[6])); }
+function ordTxt(n){ return n+(n===1?'st':n===2?'nd':n===3?'rd':'th'); }
 
-// relevance: multilingual team aliases + football/World-Cup signal tokens (titles vary by language)
-const TEAM_ALIASES={
-  'Scotland':['scotland','scottish','écosse','ecosse','escocia','schottland','scozia','escócia','σκωτία','اسكتلندا','স্কটল্যান্ড','苏格兰','蘇格蘭','스코틀랜드','skottland','schotland'],
-  'Brazil':['brazil','brasil','brésil','bresil','brasilien','brasile','βραζιλία','البرازيل','ब्राज़ील','巴西','seleção'],
-  'Morocco':['morocco','maroc','marruecos','marrocos','marokko','marocco','المغرب','मोरक्को','摩洛哥','atlas lions','lions de l\u2019atlas','lions de l\'atlas'],
-  'Haiti':['haiti','haïti','haiti','haití','αϊτή','هايتي','海地'],
-  'England':['england','angleterre','inglaterra','england','αγγλία','إنجلترا','इंग्लैंड','英格兰'],
-  'Argentina':['argentina','argentine','αργεντινή','الأرجنتين','阿根廷','albiceleste'],
-  'Spain':['spain','españa','espagne','spanien','spagna','espanha','ισπανία','إسبانيا','西班牙','la roja'],
-  'France':['france','francia','frankreich','frança','γαλλία','فرنسا','法国','les bleus'],
-  'Germany':['germany','deutschland','alemania','allemagne','germania','alemanha','γερμανία','ألمانيا','德国'],
-  'Portugal':['portugal','portekiz','πορτογαλία','البرتغال','葡萄牙']
-};
-function teamAliases(t){ return TEAM_ALIASES[t] || [t.toLowerCase()]; }
-const WC_TOKENS=['world cup','worldcup','wc 2026','wc2026','fifa','mundial','mondial','copa del mundo',
-  'coupe du monde','weltmeisterschaft','wm 2026','μουντιάλ','كأس العالم','dünya kupası','विश्व कप',
-  'বিশ্বকাপ','世界杯','vm 2026','soccer','football','fútbol','futbol','futebol','calcio','voetbal',
-  'fußball','fodbold','piłkarski','mistrzostwa'];
-function classify(a){
-  const t=(a.title||'').toLowerCase();
-  const hasTeam=teamAliases(team).some(al=>t.includes(al));
-  const hasWC=WC_TOKENS.some(w=>t.includes(w));
-  return {hasTeam,hasWC};
+// standings for a group, optionally including one hypothetical result {team1,team2,ft}
+function tableWith(grp, hypo){
+  const g=groupsOf()[grp]; if(!g) return [];
+  const row={}; [...g].forEach(t=>row[t]={team:t,P:0,W:0,D:0,L:0,GF:0,GA:0,GD:0,Pts:0});
+  const apply=(t1,t2,a,b)=>{ const r1=row[t1],r2=row[t2]; if(!r1||!r2) return;
+    r1.P++;r2.P++;r1.GF+=a;r1.GA+=b;r2.GF+=b;r2.GA+=a;
+    if(a>b){r1.W++;r2.L++;r1.Pts+=3;} else if(b>a){r2.W++;r1.L++;r2.Pts+=3;} else {r1.D++;r2.D++;r1.Pts++;r2.Pts++;} };
+  MATCHES.forEach(m=>{ if(m.group===grp && m.ft) apply(m.team1,m.team2,m.ft[0],m.ft[1]); });
+  if(hypo && hypo.ft) apply(hypo.team1,hypo.team2,hypo.ft[0],hypo.ft[1]);
+  return Object.values(row).map(r=>{r.GD=r.GF-r.GA;return r;})
+    .sort((x,y)=> y.Pts-x.Pts || y.GD-x.GD || y.GF-x.GF || x.team.localeCompare(y.team));
+}
+function nextGroupFixture(){
+  const grp=teamGroup(team);
+  const list=MATCHES.filter(m=>m.group===grp && !m.ft && (m.team1===team||m.team2===team))
+    .map(m=>({m,d:parseUTC(m.date,m.time)})).sort((a,b)=>(a.d||0)-(b.d||0));
+  return list.length? list[0].m : null;
 }
 
-let pressView='auto';
-let pressSource='', pressLiveFail='';
-
-// Saved snapshot of real headlines captured from the live feed (Scotland, 16 Jun 2026).
-// Used so the panel is reliable for the demo/blog even when live proxies are down.
-const PRESS_TEAM='Scotland';
-const PRESS_SNAPSHOT_RAW=[
-["বিশ্বকাপের মাঝপথে নেইমারকে নিয়ে বড় দুঃসংবাদ পেল ব্রাজিল","vnewsbd.com","Bangladesh"],
-["Armando Sá fala da estreia no Mundial e aponta ao sucesso: Portugal está preparadíssimo para chegar à final","sapo.pt","Portugal"],
-["CBF desiste de prever retorno de Neymar na primeira fase e futuro de atleta é incerto","brasil247.com","Brazil"],
-["Neymar Set To Miss Brazil Remaining Group Matches, Targets Knockout Return","leadership.ng","Nigeria"],
-["Os dias em que o mundo conheceu Pelé e os golos de Fontaine","sapo.pt","Portugal"],
-["Iran cage New Zealand, Saudi Arabia frustrate Uruguay in another 2026 World Cup stalemate","blueprint.ng","Nigeria"],
-["Keine Hoffnung auf eine Rückkehr von Neymar in der ersten Phase der WM","latina-press.com","Brazil"],
-["नेमार के नए टेस्ट हुए","navabharat.com","India"],
-["Day six of the 2026 World Cup finals with four stalemates but so much drama","themag.co.uk","United Kingdom"],
-["Lanarkshire schoolkids team up with care home residents for exciting new project","dailyrecord.co.uk","United Kingdom"],
-["New sculptural exhibition for Ukrainian-born artist who now calls Wishaw home","dailyrecord.co.uk","United Kingdom"],
-["Most expensive beer at the World Cup","fourfourtwo.com","Spain"],
-["Neymar undergoes new tests","haitisun.com","United States"],
-["Iran Fans Protest Open World Cup Game. Players Avoid Politics.","burgundywave.com","United States"],
-["كأس العالم 2026| بين سلامة اللاعبين والمكاسب الإعلانية.. جدل متواصل حول استراحات شرب المياه","shorouknews.com","Egypt"],
-["Efemérides mundialistas: El Mundial más ofensivo","prensa-latina.cu","Cuba"],
-["Books I'm Dying to Read | Maine Crime Writers","mainecrimewriters.com","United States"],
-["Dünya Kupası maç saatleri ve fikstürü: İşte son puan durumu ve Türkiye'nin kalan maçları","turkiyegazetesi.com.tr","Turkey"],
-["Vozinha: Kipa mzee aliyeiteka dunia ya soka","bbc.com","United Kingdom"],
-["Ντικ Άντβοκαατ: Το κλάμα του θρυλικού προπονητή πριν το Γερμανία – Κουρασάο","inewsgr.com","Greece"],
-["Μουντιάλ 2026: Ούτε με την Αϊτή ο Νεϊμάρ, επιστρέφει στα νοκ-άουτ","inewsgr.com","Greece"],
-["FIFA WC 2026: Neymar undergoes new tests, likely miss Brazil second Group C game","morungexpress.com","India"],
-["World Cup day five highlights: Cape Verde humble Spain, water break frustration, work ahead for Marcelo Bielsa","fourfourtwo.com","Spain"],
-["Neymar Likely Out of Brazil vs Haiti, WC 2026","newkerala.com","India"],
-["Osimhen, Nwabali, Chukwueze among Nigerian stars facing key transfer decisions","dailypost.ng","Nigeria"],
-["Mondial 2026: Les Lions de l'Atlas au grand complet avant le choc face à l'Écosse","libe.ma","Morocco"],
-["بمشاركة مصر والسعودية، يوم تاريخي في كأس العالم بسبب التعادلات","vetogate.com","Egypt"],
-["Irán, con enorme apoyo del público en Los Ángeles, logra emotivo empate","laopinion.com","United States"],
-["Edinburgh International Book Festival programme revealed","thenational.scot","United Kingdom"],
-["Neymar undergoes new tests, likely miss Brazil second Group C game","prokerala.com","India"],
-["Flash Back: Η μέρα που η Αλγερία νίκησε την Γερμανία και… τιμωρήθηκε!","espressonews.gr","Greece"],
-["Another BBC show destroyed by political box-ticking","express.co.uk","United Kingdom"],
-["Iran vs Selandia Baru: Elijah Just, Pahlawan All Whites dengan Dua Gol Spektakuler","liputan6.com","Indonesia"],
-["中国男人，您在哪儿啊？？（二）","wenxuecity.com","China"],
-["FIFA WC 2026: Neymar undergoes new tests, likely miss Brazil second Group C game","ianslive.in","India"],
-["¿Quiénes ganan y quiénes pierden con las polémicas pausas de hidratación de los partidos del Mundial?","eldeber.com.bo","Bolivia"],
-["Θετική πρεμιέρα στο Μουντιάλ παρά τις υψηλές τιμές εισιτηρίων","kathimerini.gr","Greece"],
-["Irán viene de atrás dos veces y evita primera victoria de Nueva Zelanda en una Copa del Mundo","razon.com.mx","Mexico"],
-["Moda en el Mundial 2026","hoy.com.do","Dominican Republic"],
-["Austria vs Jordania en el Mundial 2026: fecha, horario y dónde ver en TV y online","canal26.com",""]
-];
-function snapshotArticles(){ return PRESS_SNAPSHOT_RAW.map(a=>({title:a[0],domain:a[1],country:a[2],
-  url:'https://'+a[1],d:new Date(Date.UTC(2026,5,16))})); }
-
-function fetchT(url,ms){ const c=new AbortController(); const id=setTimeout(()=>c.abort(),ms);
-  return fetch(url,{cache:'no-store',signal:c.signal}).finally(()=>clearTimeout(id)); }
-
-async function loadPress(){
-  if(pressBusy) return; pressBusy=true;
-  const btn=document.getElementById('pbtn'), lab=document.getElementById('plabel');
-  const list=document.getElementById('plist'), chips=document.getElementById('pchips');
-  btn.disabled=true; lab.innerHTML='<span class="spin" style="width:13px;height:13px;border-color:rgba(255,255,255,.4);border-top-color:#fff;margin:0;animation:sp .7s linear infinite"></span>';
-  chips.style.display='none';
-  list.innerHTML='<div class="pstate"><span class="spin"></span>Searching the world\u2019s press for '+escapeHtml(team)+'\u2026</div>';
-  const forTeam=team;
-  const q='"'+team+'" (soccer OR "World Cup")';
-  const gdelt='https://api.gdeltproject.org/api/v2/doc/doc?query='+encodeURIComponent(q)+
-    '&mode=artlist&maxrecords=30&sort=datedesc&format=json&timespan=14d';
-  // Try GDELT directly (works if it sends CORS headers); otherwise public proxies.
-  const enc=encodeURIComponent(gdelt);
-  const sources=[
-    {name:'Direct',          url:gdelt},
-    {name:'AllOrigins(get)', url:'https://api.allorigins.win/get?url='+enc, wrap:true},
-    {name:'AllOrigins(raw)', url:'https://api.allorigins.win/raw?url='+enc},
-    {name:'CodeTabs',        url:'https://api.codetabs.com/v1/proxy/?quest='+enc},
-  ];
-  let arts=null; const diag=[];
-  for(const s of sources){
-    try{
-      const res=await fetchT(s.url, 8000);
-      if(!res.ok){ diag.push(s.name+': HTTP '+res.status); console.warn('[press]',s.name,'HTTP',res.status); continue; }
-      let txt=await res.text(); let j;
-      try{ j=JSON.parse(txt); if(s.wrap && j && typeof j.contents==='string') j=JSON.parse(j.contents); }
-      catch(pe){ diag.push(s.name+': non-JSON ('+txt.slice(0,36).replace(/\s+/g,' ')+'\u2026)'); console.warn('[press]',s.name,'parse',txt.slice(0,120)); continue; }
-      const a=(j.articles||[]).map(x=>({title:x.title,url:x.url,domain:x.domain,
-        country:x.sourcecountry||'',d:parseGdeltDate(x.seendate)})).filter(x=>x.title&&x.url);
-      if(!a.length){ diag.push(s.name+': reached, 0 articles'); console.info('[press]',s.name,'0 articles'); continue; }
-      diag.push(s.name+': OK ('+a.length+')'); console.info('[press]',s.name,'OK',a.length);
-      arts=a; break;
-    }catch(e){ const r=(e.name==='AbortError')?'timeout (8s)':((e.name||'Error')+' '+(e.message||'')); diag.push(s.name+': '+r); console.warn('[press]',s.name,e); }
-  }
-  pressTeam=forTeam; pressFilter='All'; pressView='auto';
-  if(arts && arts.length){ pressArticles=arts; pressSource='live'; pressLiveFail=''; renderPress(); }
-  else if(forTeam===PRESS_TEAM){
-    pressArticles=snapshotArticles(); pressSource='snapshot'; pressLiveFail=diag.join(' · '); renderPress();
-  }
-  else{
-    pressArticles=[]; pressSource='';
-    const detail=diag.length? diag.map(d=>'<div>\u2022 '+escapeHtml(d)+'</div>').join('') : '';
-    list.innerHTML='<div class="pstate" style="text-align:left">'+
-      '<b>Couldn\u2019t load live headlines.</b> A static file can\u2019t search the web directly \u2014 the browser '+
-      'blocks cross-site news calls (CORS), so this routes through free public proxies, and here\u2019s what '+
-      'each reported:'+
-      '<div style="margin:10px 0;font-family:monospace;font-size:12px;color:#4A5163">'+detail+'</div>'+
-      'For something reliable (a blog/demo), the cleaner routes are capturing headlines in <b>Cowork</b> '+
-      '(it searches the web natively) or a tiny Jera-hosted endpoint. The match data above is unaffected.</div>';
-  }
-  pressBusy=false; btn.disabled=false; lab.textContent='Refresh headlines';
-}
-
-function renderPress(){
-  const ctx=document.getElementById('pctx'), list=document.getElementById('plist'),
-        chips=document.getElementById('pchips'), lab=document.getElementById('plabel');
-  if(!ctx) return;
-  ctx.textContent=pctxText();
-  if(pressTeam!==team){
-    if(team===PRESS_TEAM){
-      pressArticles=snapshotArticles(); pressTeam=team; pressSource='snapshot';
-      pressFilter='All'; pressView='auto'; pressLiveFail='';
-    } else {
-      chips.style.display='none';
-      list.innerHTML='<div class="pstate">See what newspapers around the world \u2014 and where '+
-        escapeHtml(team)+' play \u2014 are saying. <b>Load headlines</b> to fetch live coverage.</div>';
-      if(lab) lab.textContent='Load headlines';
-      return;
+function renderScenarios(){
+  const body=document.getElementById('morebody');
+  const grp=teamGroup(team); const tbl=tableWith(grp,null);
+  const me=tbl.find(r=>r.team===team)||{P:0,Pts:0}; const rank=tbl.findIndex(r=>r.team===team)+1;
+  const left=3-me.P; const nf=nextGroupFixture();
+  let html='<div class="needs">'+escapeHtml(team)+' are <b>'+(rank?ordTxt(rank):'\u2014')+'</b> in '+grp+
+    ' on <b>'+me.Pts+' pts</b>, '+(left>0? left+' game'+(left>1?'s':'')+' to play.' : 'group stage complete.')+'</div>';
+  if(nf){
+    const opp=nf.team1===team? nf.team2 : nf.team1; const home=nf.team1===team;
+    html+='<div class="outcome">If the next game ('+(home?'vs ':'@ ')+escapeHtml(opp)+') finishes\u2026</div>';
+    html+='<div class="seg" id="scSeg">'+['win','draw','loss'].map(o=>
+      '<button data-o="'+o+'" aria-pressed="'+(scOutcome===o)+'">'+(o==='win'?'Win':o==='draw'?'Draw':'Loss')+'</button>').join('')+'</div>';
+    let hypo=null;
+    if(scOutcome){ const s=scOutcome==='win'?[2,0]:scOutcome==='draw'?[1,1]:[0,2];
+      hypo=home? {team1:team,team2:opp,ft:s} : {team1:opp,team2:team,ft:[s[1],s[0]]}; }
+    const prov=tableWith(grp,hypo);
+    const provMe=prov.find(r=>r.team===team); const provRank=prov.findIndex(r=>r.team===team)+1;
+    if(scOutcome){
+      html+='<div class="needs">A '+scOutcome+' would put '+escapeHtml(team)+' on <b>'+provMe.Pts+
+        ' pts</b>, provisional <b>'+ordTxt(provRank)+'</b> in the group '+
+        '<span style="color:var(--muted)">(if the other game stays as it is)</span>.</div>';
     }
+    html+='<div class="miniwrap">'+prov.map((r,i)=>'<div class="minirow'+(r.team===team?' me':'')+'">'+
+      '<span class="rk num">'+(i+1)+'</span><span class="nm">'+fl(r.team)+' '+escapeHtml(r.team)+'</span>'+
+      '<span class="pt num">'+r.Pts+'</span></div>').join('')+'</div>';
   }
-  if(lab) lab.textContent='Refresh headlines';
-  const MAXN=5;                                  // show at most 5 headlines
-  const cutoff=Date.now()-14*864e5;              // last ~2 weeks
-  // dedupe by title, classify relevance, drop stale items (live only — snapshot is a fixed labelled capture)
-  const seen=new Set(); const arts=[];
-  pressArticles.forEach(a=>{ const k=(a.title||'').trim().toLowerCase();
-    if(!k||seen.has(k)) return;
-    if(pressSource==='live' && a.d && a.d.getTime()<cutoff) return;
-    seen.add(k); arts.push(Object.assign({},a,classify(a))); });
-  const byRecent=(x,y)=> (y.hasTeam-x.hasTeam) || ((y.d?y.d.getTime():0)-(x.d?x.d.getTime():0));
-  const teamArts=arts.filter(a=>a.hasTeam).sort(byRecent);
-  const wcArts=arts.filter(a=>a.hasTeam||a.hasWC).sort(byRecent);   // football/WC signal, drops local noise
-  const view = pressView==='auto' ? (teamArts.length>=3?'team':'all') : pressView;
-  const shown = (view==='team'? teamArts : wcArts).slice(0,MAXN);
+  html+='<div class="note2">Top two in each group qualify for the knockouts; several of the best third-placed teams also go through. This is a what-if on the next game only \u2014 not a final qualification call.</div>';
+  body.innerHTML=html;
+  const seg=document.getElementById('scSeg');
+  if(seg) seg.querySelectorAll('button').forEach(b=>b.onclick=()=>{ const o=b.getAttribute('data-o'); scOutcome=(scOutcome===o?null:o); renderScenarios(); });
+}
 
-  if(!arts.length){
-    chips.style.display='none';
-    list.innerHTML='<div class="pstate">No '+escapeHtml(team)+' coverage in the last couple of weeks.</div>';
-    return;
-  }
+function renderFixturesAll(){
+  const body=document.getElementById('morebody');
+  const groups=Object.keys(groupsOf()).sort();
+  if(!fxGroup || groups.indexOf(fxGroup)<0) fxGroup=teamGroup(team)||groups[0];
+  let html='<select class="lsel" id="fxGroupSel" aria-label="Choose a group">'+
+    groups.map(g=>'<option value="'+g+'"'+(g===fxGroup?' selected':'')+'>'+g+'</option>').join('')+'</select>';
+  const ms=MATCHES.filter(m=>m.group===fxGroup).map(m=>({m,d:parseUTC(m.date,m.time)})).sort((a,b)=>(a.d||0)-(b.d||0));
+  html+=ms.map(({m,d})=>{
+    const me=(m.team1===team||m.team2===team);
+    const mid=m.ft? '<span class="sc num">'+m.ft[0]+'\u2013'+m.ft[1]+'</span>'
+                  : '<span class="vs">'+(d?d.toLocaleDateString('en-GB',{day:'numeric',month:'short'}):'')+'</span>';
+    return '<div class="fxrow'+(me?' me':'')+'"><span class="tA">'+escapeHtml(m.team1)+' '+fl(m.team1)+'</span>'+
+      mid+'<span class="tB">'+fl(m.team2)+' '+escapeHtml(m.team2)+'</span></div>';
+  }).join('');
+  html+='<div class="note2">All six group fixtures \u2014 scores where played, kickoff date otherwise. Your selected team\u2019s games are highlighted.</div>';
+  body.innerHTML=html;
+  const sel=document.getElementById('fxGroupSel');
+  if(sel) sel.onchange=e=>{ fxGroup=e.target.value; renderFixturesAll(); };
+}
 
-  // view toggle + optional note
-  const srcNote = pressSource==='snapshot'
-    ? '<div class="pnote">Saved snapshot of real coverage (16 Jun)'+(pressLiveFail?' \u2014 live didn\u2019t connect this time':'')+'. Use <b>Refresh</b> to try live.</div>'
-    : (pressSource==='live' ? '<div class="pnote">Live \u2014 fetched just now \u00b7 last two weeks.</div>' : '');
-  const note = srcNote + ((pressView==='auto' && view==='all' && teamArts.length<3)
-    ? '<div class="pnote">Not much '+escapeHtml(team)+'-specific coverage right now \u2014 showing wider World Cup news. Switch to \u201CAbout '+escapeHtml(team)+'\u201D once they\u2019re back in action.</div>' : '');
-  const toggle='<div class="pview">'+
-    '<button data-v="team" aria-pressed="'+(view==='team')+'">About '+escapeHtml(team)+' <span style="opacity:.6">'+Math.min(teamArts.length,MAXN)+'</span></button>'+
-    '<button data-v="all" aria-pressed="'+(view==='all')+'">All World Cup <span style="opacity:.6">'+Math.min(wcArts.length,MAXN)+'</span></button></div>';
-
-  // country chips on the shown (capped) set
-  const counts={}; shown.forEach(a=>{ const c=a.country||'Other'; counts[c]=(counts[c]||0)+1; });
-  const host=hostCountryName();
-  const ordered=Object.keys(counts).sort((a,b)=>counts[b]-counts[a]).slice(0,8);
-  if(pressFilter!=='All' && !counts[pressFilter]) pressFilter='All';
-  let ch='<button class="chip" data-c="All" aria-pressed="'+(pressFilter==='All')+'">All <span class="ct">'+shown.length+'</span></button>';
-  ordered.forEach(c=>{ const star=(host&&c===host)?'<span class="star" title="where the game is played">\u2605</span> ':'';
-    ch+='<button class="chip" data-c="'+escapeHtml(c)+'" aria-pressed="'+(pressFilter===c)+'">'+star+pcountryFlag(c)+' '+escapeHtml(c)+' <span class="ct">'+counts[c]+'</span></button>'; });
-  chips.innerHTML=toggle+note+'<div class="chiprow">'+ch+'</div>'; chips.style.display='block';
-  chips.querySelectorAll('.pview button').forEach(b=>b.onclick=()=>{ pressView=b.getAttribute('data-v'); pressFilter='All'; renderPress(); });
-  chips.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{ pressFilter=b.getAttribute('data-c'); renderPress(); });
-
-  const items=shown.filter(a=>pressFilter==='All'||a.country===pressFilter);
-  list.innerHTML=items.map(a=>{ const when=a.d? a.d.toLocaleDateString('en-GB',{day:'numeric',month:'short'}):'';
-    return '<a class="hl" href="'+encodeURI(a.url)+'" target="_blank" rel="noopener">'+
-      '<span class="hl-title">'+escapeHtml(a.title)+'</span>'+
-      '<span class="hl-meta"><span class="src">'+pcountryFlag(a.country)+' '+escapeHtml(a.domain||'')+'</span>'+
-      (a.country?'<span>· '+escapeHtml(a.country)+'</span>':'')+(when?'<span>· '+when+'</span>':'')+'</span></a>'; }).join('');
+function renderScorers(){
+  const body=document.getElementById('morebody');
+  const tally={};
+  MATCHES.forEach(m=>{ (m.goals1||[]).forEach(n=>{ const k=n+'|'+m.team1; tally[k]=(tally[k]||0)+1; });
+                       (m.goals2||[]).forEach(n=>{ const k=n+'|'+m.team2; tally[k]=(tally[k]||0)+1; }); });
+  const rows=Object.keys(tally).map(k=>{ const i=k.lastIndexOf('|'); return {name:k.slice(0,i),tm:k.slice(i+1),g:tally[k]}; })
+    .sort((a,b)=> b.g-a.g || a.name.localeCompare(b.name)).slice(0,15);
+  if(!rows.length){ body.innerHTML='<div class="note2">No goals recorded yet.</div>'; return; }
+  let html='<table class="sco"><tbody>'+rows.map((r,i)=>'<tr class="'+(r.tm===team?'me':'')+'">'+
+    '<td class="rk num">'+(i+1)+'</td><td><span class="nm">'+escapeHtml(r.name)+'</span> '+
+    '<span class="tm">'+fl(r.tm)+' '+escapeHtml(r.tm)+'</span></td>'+
+    '<td class="g num">'+r.g+'</td></tr>').join('')+'</tbody></table>';
+  html+='<div class="note2">Top scorers across the tournament so far. '+escapeHtml(team)+'\u2019s players are highlighted.</div>';
+  body.innerHTML=html;
 }
 
 /* ---------- init ---------- */
 function init(){
   picker.innerHTML=allTeams().map(t=>`<option value="${t}">${fl(t)}  ${t}</option>`).join("");
   picker.value=team;
-  picker.addEventListener('change',e=>{team=e.target.value; fxTab='next'; render();});
+  picker.addEventListener('change',e=>{team=e.target.value; fxTab='next'; scOutcome=null; fxGroup=null; render();});
   document.getElementById('refresh').addEventListener('click',doRefresh);
-  document.getElementById('pbtn').addEventListener('click',loadPress);
   document.getElementById('tab-next').addEventListener('click',()=>{fxTab='next';renderFixtures();});
   document.getElementById('tab-last').addEventListener('click',()=>{fxTab='last';renderFixtures();});
+  document.getElementById('mtab-sc').addEventListener('click',()=>{moreTab='sc';renderMore();});
+  document.getElementById('mtab-fx').addEventListener('click',()=>{moreTab='fx';renderMore();});
+  document.getElementById('mtab-sco').addEventListener('click',()=>{moreTab='sco';renderMore();});
   render();
 }
 init();
